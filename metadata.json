@@ -1,0 +1,6 @@
+{
+  "name": "StockFlow - Gestão Inteligente de Estoque",
+  "description": "SaaS profissional para gestão de estoque e inventário para empresas, com controle de produtos, fornecedores, movimentações e múltiplos planos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

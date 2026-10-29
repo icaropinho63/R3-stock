@@ -1,0 +1,262 @@
+{
+  "plans": [
+    {
+      "id": "free",
+      "name": "Free",
+      "price": 0,
+      "maxProducts": 50,
+      "maxUsers": 1,
+      "billingCycle": "monthly",
+      "features": [
+        "Até 50 produtos cadastrados",
+        "1 usuário com acesso",
+        "Controle de entradas e saídas",
+        "Dashboard com indicadores básicos",
+        "Relatórios essenciais"
+      ]
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": 39.9,
+      "maxProducts": 1000,
+      "maxUsers": 5,
+      "billingCycle": "monthly",
+      "features": [
+        "Até 1.000 produtos cadastrados",
+        "Até 5 usuários colaboradores",
+        "Relatórios avançados com exportação CSV",
+        "Importação em lote via CSV",
+        "Gestão completa de fornecedores",
+        "Alertas de estoque baixo e margem de lucro"
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "price": 79.9,
+      "maxProducts": 5000,
+      "maxUsers": 15,
+      "billingCycle": "monthly",
+      "features": [
+        "Até 5.000 produtos cadastrados",
+        "Até 15 usuários com permissões avançadas",
+        "Todos os recursos do plano Pro",
+        "Controle de acesso granular por cargo",
+        "Auditoria completa de movimentações",
+        "Suporte prioritário via WhatsApp"
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "id": "comp-demo-1",
+      "name": "TechStore Brasil Ltda",
+      "cnpj": "12.345.678/0001-90",
+      "phone": "(11) 98765-4321",
+      "email": "contato@techstore.com.br",
+      "planId": "free",
+      "maxProducts": 50,
+      "maxUsers": 1,
+      "status": "active",
+      "createdAt": "2026-10-29T17:05:02.166Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user-demo-1",
+      "companyId": "comp-demo-1",
+      "name": "Carlos Oliveira",
+      "email": "demo@r3stock.com.br",
+      "passwordHash": "demo123",
+      "role": "owner",
+      "createdAt": "2026-10-29T17:05:02.166Z"
+    },
+    {
+      "id": "user-admin-root",
+      "companyId": "comp-admin-platform",
+      "name": "Administrador R3-Stock",
+      "email": "admin@r3stock.com.br",
+      "passwordHash": "admin123",
+      "role": "platform_admin",
+      "createdAt": "2026-10-29T17:05:02.166Z"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "sup-1",
+      "companyId": "comp-demo-1",
+      "name": "Distribuidora Global Tech",
+      "contactName": "Mariana Santos",
+      "phone": "(11) 3221-8899",
+      "email": "pedidos@globaltech.com.br",
+      "notes": "Prazo médio de entrega: 3 dias úteis. Desconto de 5% no PIX.",
+      "createdAt": "2026-10-29T17:05:02.166Z"
+    },
+    {
+      "id": "sup-2",
+      "companyId": "comp-demo-1",
+      "name": "Eletrônicos do Brasil S/A",
+      "contactName": "Roberto Costa",
+      "phone": "(41) 3044-1234",
+      "email": "comercial@eletronicosbr.com",
+      "notes": "Fornecedor homologado para cabos e adaptadores.",
+      "createdAt": "2026-10-29T17:05:02.166Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1",
+      "companyId": "comp-demo-1",
+      "name": "Teclado Mecânico RGB Switch Blue",
+      "sku": "TEC-MEC-01",
+      "barcode": "7891234567890",
+      "category": "Periféricos",
+      "unit": "UN",
+      "quantity": 18,
+      "minStock": 10,
+      "costPrice": 120,
+      "salePrice": 249.9,
+      "supplierId": "sup-1",
+      "notes": "Garantia de 12 meses direto do fornecedor.",
+      "createdAt": "2026-10-24T17:05:02.166Z",
+      "updatedAt": "2026-10-29T17:05:02.166Z"
+    },
+    {
+      "id": "prod-2",
+      "companyId": "comp-demo-1",
+      "name": "Mouse Gamer 16000 DPI Óptico",
+      "sku": "MOU-GAM-02",
+      "barcode": "7891234567891",
+      "category": "Periféricos",
+      "unit": "UN",
+      "quantity": 4,
+      "minStock": 15,
+      "costPrice": 65,
+      "salePrice": 149.9,
+      "supplierId": "sup-1",
+      "notes": "Modelo de alta rotatividade. Repor imediatamente.",
+      "createdAt": "2026-10-25T17:05:02.166Z",
+      "updatedAt": "2026-10-29T17:05:02.166Z"
+    },
+    {
+      "id": "prod-3",
+      "companyId": "comp-demo-1",
+      "name": "Monitor UltraWide 29\" IPS Full HD",
+      "sku": "MON-UW-29",
+      "barcode": "7891234567892",
+      "category": "Monitores",
+      "unit": "UN",
+      "quantity": 8,
+      "minStock": 5,
+      "costPrice": 790,
+      "salePrice": 1399,
+      "supplierId": "sup-2",
+      "notes": "Frágil. Armazenar na prateleira inferior.",
+      "createdAt": "2026-10-26T17:05:02.166Z",
+      "updatedAt": "2026-10-29T17:05:02.166Z"
+    },
+    {
+      "id": "prod-4",
+      "companyId": "comp-demo-1",
+      "name": "Headset Sem Fio Noise Cancelling",
+      "sku": "HEA-WIR-04",
+      "barcode": "7891234567893",
+      "category": "Áudio",
+      "unit": "UN",
+      "quantity": 0,
+      "minStock": 8,
+      "costPrice": 210,
+      "salePrice": 429,
+      "supplierId": "sup-1",
+      "notes": "Esgotou após promoção da Black Friday.",
+      "createdAt": "2026-10-27T17:05:02.166Z",
+      "updatedAt": "2026-10-29T17:05:02.166Z"
+    },
+    {
+      "id": "prod-5",
+      "companyId": "comp-demo-1",
+      "name": "Cabo HDMI 2.1 Ultra High Speed 2m",
+      "sku": "CAB-HDM-05",
+      "barcode": "7891234567894",
+      "category": "Acessórios",
+      "unit": "UN",
+      "quantity": 45,
+      "minStock": 20,
+      "costPrice": 15,
+      "salePrice": 45,
+      "supplierId": "sup-2",
+      "notes": "Suporta 4K a 120Hz e 8K a 60Hz.",
+      "createdAt": "2026-10-28T17:05:02.166Z",
+      "updatedAt": "2026-10-29T17:05:02.166Z"
+    }
+  ],
+  "movements": [
+    {
+      "id": "mov-1",
+      "companyId": "comp-demo-1",
+      "productId": "prod-1",
+      "type": "entry",
+      "quantity": 20,
+      "previousStock": 0,
+      "newStock": 20,
+      "reason": "Compra inicial NF-e #1042",
+      "notes": "Recebido sem avarias.",
+      "userId": "user-demo-1",
+      "userName": "Carlos Oliveira",
+      "createdAt": "2026-10-24T17:05:02.166Z"
+    },
+    {
+      "id": "mov-2",
+      "companyId": "comp-demo-1",
+      "productId": "prod-1",
+      "type": "exit",
+      "quantity": 2,
+      "previousStock": 20,
+      "newStock": 18,
+      "reason": "Venda Pedido #841",
+      "notes": "Retirada para expedição balcão.",
+      "userId": "user-demo-1",
+      "userName": "Carlos Oliveira",
+      "createdAt": "2026-10-27T17:05:02.166Z"
+    },
+    {
+      "id": "mov-3",
+      "companyId": "comp-demo-1",
+      "productId": "prod-2",
+      "type": "exit",
+      "quantity": 11,
+      "previousStock": 15,
+      "newStock": 4,
+      "reason": "Venda em lote para empresa parceira",
+      "notes": "NF-e emitida com sucesso.",
+      "userId": "user-demo-1",
+      "userName": "Carlos Oliveira",
+      "createdAt": "2026-10-28T17:05:02.166Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1793295499968",
+      "adminId": "user-admin-root",
+      "adminEmail": "admin@r3stock.com.br",
+      "adminName": "Administrador R3-Stock",
+      "targetCompanyId": "comp-1793294107271",
+      "targetCompanyName": "R3",
+      "action": "delete_company",
+      "details": "Exclusão definitiva da empresa \"R3\" (ID: comp-1793294107271, E-mail: icaropinho007@gmai.com, Plano: business). Dados operacionais excluídos: 0 produtos, 0 movimentações, 0 fornecedores, 1 usuários. Registros de auditoria preservados conforme obrigações da LGPD.",
+      "createdAt": "2026-10-29T17:38:19.968Z"
+    },
+    {
+      "id": "log-1793295318744",
+      "adminId": "user-admin-root",
+      "adminEmail": "admin@r3stock.com.br",
+      "adminName": "Administrador R3-Stock",
+      "targetCompanyId": "comp-1793294107271",
+      "targetCompanyName": "R3",
+      "action": "deactivate_company",
+      "details": "Empresa desativada pelo administrador. Usuários vinculados foram bloqueados de efetuar login ou movimentações enquanto o banco preserva os dados.",
+      "createdAt": "2026-10-29T17:35:18.744Z"
+    }
+  ]
+}
